@@ -8,14 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State private var navigationIsShowing = false
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            VStack {
+                Image(systemName: "globe")
+                    .font(.system(size: 26))
+                    .foregroundColor(.black)
+                Circle()
+                    .fill(.red)
+                    .frame(width: 52, height: 52)
+                    .foregroundColor(.green)
+                    .opacity(1)
+
+            }.onTapGesture {
+                print("hai fatto tap su camera")
+                navigationIsShowing = true
         }
-        .padding()
+        if navigationIsShowing {
+            NavigationView {
+                NavigationLink{
+
+                } label: {
+                    Text("按鈕")
+                }
+            }
+        }
+
+        }
+        
     }
 }
 
