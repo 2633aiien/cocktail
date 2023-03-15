@@ -1,6 +1,6 @@
 //
-//  ViewSizeWidget.swift
-//  ViewSizeWidget
+//  CocktailWidget.swift
+//  CocktailWidget
 //
 //  Created by allen on 2023/3/14.
 //
@@ -24,7 +24,7 @@ struct Provider: TimelineProvider {
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+            let entryDate = Calendar.current.date(byAdding: .minute, value: hourOffset, to: currentDate)!
             let entry = SimpleEntry(date: entryDate)
             entries.append(entry)
         }
@@ -38,29 +38,34 @@ struct SimpleEntry: TimelineEntry {
     let date: Date
 }
 
-struct ViewSizeWidgetEntryView : View {
+struct CocktailWidgetEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        Text(entry.date, style: .time).font(.subheadline)
     }
 }
 
-struct ViewSizeWidget: Widget {
-    let kind: String = "ViewSizeWidget"
+struct CocktailWidget: Widget {
+    let kind: String = "CocktailWidget"
 
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: Provider()) { entry in
-            ViewSizeWidgetEntryView(entry: entry)
+            StaticConfiguration(kind: kind, provider: Provider()) { entry in
+                CocktailWidgetEntryView(entry: entry)
+            }
+            .configurationDisplayName("Cocktail 小工具")
+            .description("請選擇尺寸")
+            .supportedFamilies([
+                .systemSmall,
+                .systemMedium,
+                .systemLarge,
+            ])
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
-    }
 }
 
-struct ViewSizeWidget_Previews: PreviewProvider {
+struct CocktailWidget_Previews: PreviewProvider {
     static var previews: some View {
-        ViewSizeWidgetEntryView(entry: SimpleEntry(date: Date()))
+        CocktailWidgetEntryView(entry: SimpleEntry(date: Date()))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

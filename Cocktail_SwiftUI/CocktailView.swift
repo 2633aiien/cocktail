@@ -16,15 +16,15 @@ struct CocktailView: View {
             VStack {
                 List(fetcher.cocktails) { cocktail in
                     HStack {
-                        Image("長島冰茶").resizable().aspectRatio(contentMode: .fit).frame(width: 50)
+                        Image(cocktail.name).resizable().aspectRatio(contentMode: .fit).frame(width: 50)
                         Text(cocktail.name).font(.system(size: 24))
-                        NavigationLink(destination: DetailSwiftUIView(name: cocktail.name, introduce: cocktail.introduce)) {
+                        NavigationLink(destination: DetailSwiftUIView(name: cocktail.name, introduce: cocktail.introduce, recipe: cocktail.recipe, review: cocktail.review)) {
                             Text("")
                         }
                     }
                 }.navigationTitle("調酒").frame(alignment: .center)
             }
-        }
+        }.accentColor(.white)
     }
 }
 

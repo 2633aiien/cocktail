@@ -16,22 +16,21 @@
 		9FE8C0D929BEC88A005868C7 /* CocktailFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C0D829BEC88A005868C7 /* CocktailFetcher.swift */; };
 		9FE8C0DB29BECF5D005868C7 /* CocktailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C0DA29BECF5D005868C7 /* CocktailView.swift */; };
 		9FE8C0E029BF177C005868C7 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C0DF29BF177C005868C7 /* ImageLoader.swift */; };
-		9FE8C0E829C0524E005868C7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE8C0E729C0524E005868C7 /* WidgetKit.framework */; };
-		9FE8C0EA29C0524E005868C7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE8C0E929C0524E005868C7 /* SwiftUI.framework */; };
-		9FE8C0ED29C0524E005868C7 /* ViewSizeWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C0EC29C0524E005868C7 /* ViewSizeWidgetBundle.swift */; };
-		9FE8C0EF29C0524E005868C7 /* ViewSizeWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C0EE29C0524E005868C7 /* ViewSizeWidgetLiveActivity.swift */; };
-		9FE8C0F129C0524E005868C7 /* ViewSizeWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C0F029C0524E005868C7 /* ViewSizeWidget.swift */; };
-		9FE8C0F329C05254005868C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE8C0F229C05254005868C7 /* Assets.xcassets */; };
-		9FE8C0F729C05254005868C7 /* ViewSizeWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FE8C0E529C0524E005868C7 /* ViewSizeWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9FE8C11D29C06175005868C7 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE8C0E729C0524E005868C7 /* WidgetKit.framework */; };
+		9FE8C11E29C06175005868C7 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE8C0E929C0524E005868C7 /* SwiftUI.framework */; };
+		9FE8C12129C06175005868C7 /* CocktailWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C12029C06175005868C7 /* CocktailWidgetBundle.swift */; };
+		9FE8C12329C06175005868C7 /* CocktailWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE8C12229C06175005868C7 /* CocktailWidget.swift */; };
+		9FE8C12529C06177005868C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FE8C12429C06177005868C7 /* Assets.xcassets */; };
+		9FE8C12929C06177005868C7 /* CocktailWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9FE8C11C29C06175005868C7 /* CocktailWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9FE8C0F529C05254005868C7 /* PBXContainerItemProxy */ = {
+		9FE8C12729C06177005868C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9F7BFCA729BB30D9008BE36F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9FE8C0E429C0524E005868C7;
-			remoteInfo = ViewSizeWidgetExtension;
+			remoteGlobalIDString = 9FE8C11B29C06175005868C7;
+			remoteInfo = CocktailWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				9FE8C0F729C05254005868C7 /* ViewSizeWidgetExtension.appex in Embed Foundation Extensions */,
+				9FE8C12929C06177005868C7 /* CocktailWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,14 +60,13 @@
 		9FE8C0DA29BECF5D005868C7 /* CocktailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailView.swift; sourceTree = "<group>"; };
 		9FE8C0DC29BEEB91005868C7 /* Cocktail-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Cocktail-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		9FE8C0DF29BF177C005868C7 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
-		9FE8C0E529C0524E005868C7 /* ViewSizeWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ViewSizeWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE8C0E729C0524E005868C7 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		9FE8C0E929C0524E005868C7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		9FE8C0EC29C0524E005868C7 /* ViewSizeWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizeWidgetBundle.swift; sourceTree = "<group>"; };
-		9FE8C0EE29C0524E005868C7 /* ViewSizeWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizeWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		9FE8C0F029C0524E005868C7 /* ViewSizeWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizeWidget.swift; sourceTree = "<group>"; };
-		9FE8C0F229C05254005868C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9FE8C0F429C05254005868C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FE8C11C29C06175005868C7 /* CocktailWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CocktailWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE8C12029C06175005868C7 /* CocktailWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailWidgetBundle.swift; sourceTree = "<group>"; };
+		9FE8C12229C06175005868C7 /* CocktailWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailWidget.swift; sourceTree = "<group>"; };
+		9FE8C12429C06177005868C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9FE8C12629C06177005868C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +77,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FE8C0E229C0524E005868C7 /* Frameworks */ = {
+		9FE8C11929C06175005868C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE8C0EA29C0524E005868C7 /* SwiftUI.framework in Frameworks */,
-				9FE8C0E829C0524E005868C7 /* WidgetKit.framework in Frameworks */,
+				9FE8C11E29C06175005868C7 /* SwiftUI.framework in Frameworks */,
+				9FE8C11D29C06175005868C7 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9F7BFCB129BB30D9008BE36F /* Cocktail_SwiftUI */,
-				9FE8C0EB29C0524E005868C7 /* ViewSizeWidget */,
+				9FE8C11F29C06175005868C7 /* CocktailWidget */,
 				9FE8C0E629C0524E005868C7 /* Frameworks */,
 				9F7BFCB029BB30D9008BE36F /* Products */,
 			);
@@ -105,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				9F7BFCAF29BB30D9008BE36F /* Cocktail_SwiftUI.app */,
-				9FE8C0E529C0524E005868C7 /* ViewSizeWidgetExtension.appex */,
+				9FE8C11C29C06175005868C7 /* CocktailWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,16 +142,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9FE8C0EB29C0524E005868C7 /* ViewSizeWidget */ = {
+		9FE8C11F29C06175005868C7 /* CocktailWidget */ = {
 			isa = PBXGroup;
 			children = (
-				9FE8C0EC29C0524E005868C7 /* ViewSizeWidgetBundle.swift */,
-				9FE8C0EE29C0524E005868C7 /* ViewSizeWidgetLiveActivity.swift */,
-				9FE8C0F029C0524E005868C7 /* ViewSizeWidget.swift */,
-				9FE8C0F229C05254005868C7 /* Assets.xcassets */,
-				9FE8C0F429C05254005868C7 /* Info.plist */,
+				9FE8C12029C06175005868C7 /* CocktailWidgetBundle.swift */,
+				9FE8C12229C06175005868C7 /* CocktailWidget.swift */,
+				9FE8C12429C06177005868C7 /* Assets.xcassets */,
+				9FE8C12629C06177005868C7 /* Info.plist */,
 			);
-			path = ViewSizeWidget;
+			path = CocktailWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,28 +168,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				9FE8C0F629C05254005868C7 /* PBXTargetDependency */,
+				9FE8C12829C06177005868C7 /* PBXTargetDependency */,
 			);
 			name = Cocktail_SwiftUI;
 			productName = Cocktail_SwiftUI;
 			productReference = 9F7BFCAF29BB30D9008BE36F /* Cocktail_SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9FE8C0E429C0524E005868C7 /* ViewSizeWidgetExtension */ = {
+		9FE8C11B29C06175005868C7 /* CocktailWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9FE8C0F829C05254005868C7 /* Build configuration list for PBXNativeTarget "ViewSizeWidgetExtension" */;
+			buildConfigurationList = 9FE8C12A29C06177005868C7 /* Build configuration list for PBXNativeTarget "CocktailWidgetExtension" */;
 			buildPhases = (
-				9FE8C0E129C0524E005868C7 /* Sources */,
-				9FE8C0E229C0524E005868C7 /* Frameworks */,
-				9FE8C0E329C0524E005868C7 /* Resources */,
+				9FE8C11829C06175005868C7 /* Sources */,
+				9FE8C11929C06175005868C7 /* Frameworks */,
+				9FE8C11A29C06175005868C7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ViewSizeWidgetExtension;
-			productName = ViewSizeWidgetExtension;
-			productReference = 9FE8C0E529C0524E005868C7 /* ViewSizeWidgetExtension.appex */;
+			name = CocktailWidgetExtension;
+			productName = CocktailWidgetExtension;
+			productReference = 9FE8C11C29C06175005868C7 /* CocktailWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +205,7 @@
 					9F7BFCAE29BB30D9008BE36F = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					9FE8C0E429C0524E005868C7 = {
+					9FE8C11B29C06175005868C7 = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
@@ -227,7 +224,7 @@
 			projectRoot = "";
 			targets = (
 				9F7BFCAE29BB30D9008BE36F /* Cocktail_SwiftUI */,
-				9FE8C0E429C0524E005868C7 /* ViewSizeWidgetExtension */,
+				9FE8C11B29C06175005868C7 /* CocktailWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -242,11 +239,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FE8C0E329C0524E005868C7 /* Resources */ = {
+		9FE8C11A29C06175005868C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE8C0F329C05254005868C7 /* Assets.xcassets in Resources */,
+				9FE8C12529C06177005868C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,23 +264,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9FE8C0E129C0524E005868C7 /* Sources */ = {
+		9FE8C11829C06175005868C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FE8C0F129C0524E005868C7 /* ViewSizeWidget.swift in Sources */,
-				9FE8C0EF29C0524E005868C7 /* ViewSizeWidgetLiveActivity.swift in Sources */,
-				9FE8C0ED29C0524E005868C7 /* ViewSizeWidgetBundle.swift in Sources */,
+				9FE8C12129C06175005868C7 /* CocktailWidgetBundle.swift in Sources */,
+				9FE8C12329C06175005868C7 /* CocktailWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9FE8C0F629C05254005868C7 /* PBXTargetDependency */ = {
+		9FE8C12829C06177005868C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9FE8C0E429C0524E005868C7 /* ViewSizeWidgetExtension */;
-			targetProxy = 9FE8C0F529C05254005868C7 /* PBXContainerItemProxy */;
+			target = 9FE8C11B29C06175005868C7 /* CocktailWidgetExtension */;
+			targetProxy = 9FE8C12729C06177005868C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -462,7 +458,7 @@
 			};
 			name = Release;
 		};
-		9FE8C0F929C05254005868C7 /* Debug */ = {
+		9FE8C12B29C06177005868C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,8 +467,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9L6T99V452;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ViewSizeWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ViewSizeWidget;
+				INFOPLIST_FILE = CocktailWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CocktailWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,7 +476,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "allen.Cocktail-SwiftUI.ViewSizeWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "allen.Cocktail-SwiftUI.CocktailWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -489,7 +485,7 @@
 			};
 			name = Debug;
 		};
-		9FE8C0FA29C05254005868C7 /* Release */ = {
+		9FE8C12C29C06177005868C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -498,8 +494,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9L6T99V452;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ViewSizeWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = ViewSizeWidget;
+				INFOPLIST_FILE = CocktailWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CocktailWidget;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,7 +503,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "allen.Cocktail-SwiftUI.ViewSizeWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "allen.Cocktail-SwiftUI.CocktailWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -537,11 +533,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9FE8C0F829C05254005868C7 /* Build configuration list for PBXNativeTarget "ViewSizeWidgetExtension" */ = {
+		9FE8C12A29C06177005868C7 /* Build configuration list for PBXNativeTarget "CocktailWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9FE8C0F929C05254005868C7 /* Debug */,
-				9FE8C0FA29C05254005868C7 /* Release */,
+				9FE8C12B29C06177005868C7 /* Debug */,
+				9FE8C12C29C06177005868C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
